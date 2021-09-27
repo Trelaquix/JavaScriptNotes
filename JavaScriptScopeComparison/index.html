@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Scope Comparison</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://js.recurly.com/v4/recurly.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <header>
+                <h2 class="text-center heading-section">JavaScript Variables <br /></h2><h3>Scope Comparison</h3>
+            </header>
+            <div class="user-box">
+                <table> 
+                    <tr>
+                        <th>
+                            <h2>Var</h2>
+                        </th>
+                        <th>
+                            <h2>Let</h2>
+                        </th>
+                        <th>
+                            <h2>Const</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td><a id="var1"></a></td>
+                        <td><a id="let1"></a></td>
+                        <td><a id="const1"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a id="var2"></a></td>
+                        <td><a id="let2"></a></td>
+                        <td><a id="const2"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a id="var3"></a></td>
+                        <td><a id="let3"></a></td>
+                        <td><a id="const3"></a></td>
+                    </tr>
+                </table>
+            </div>
+        <button onClick="populateTable('global')">Global Scope</button>
+        <button onClick="reset()">Reset</button>
+        <button onClick="populateTable('function')">Function Scope</button>
+        </div>    
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://js.recurly.com/v4/recurly.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <!-- <script type="text/javascript">
+        $("button#globalbtn").click(function(){
+            $.getScript("globalScope.js",function(){
+                globalScope();
+            });
+        });
+    </script> -->
+</body>
+</html>
