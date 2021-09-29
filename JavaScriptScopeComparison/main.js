@@ -1,3 +1,8 @@
+$('.popModal').click(function(){
+    $('#exampleModal').modal('show');
+  })
+
+
 // Declaring global Variables
 var var_scope_global = "var";
 let let_scope_global = "let";
